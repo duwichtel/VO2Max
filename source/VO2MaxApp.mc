@@ -13,16 +13,7 @@ class VO2MaxApp extends App.AppBase {
 
     //! Return the initial view of your application here
     function getInitialView() {
-        return [ new VO2MaxView(), new VO2MaxDelegate() ];
-    }
-
-}
-
-class VO2MaxDelegate extends Ui.BehaviorDelegate {
-
-    function onMenu() {
-        Ui.pushView(new Rez.Menus.MainMenu(), new VO2MaxMenuDelegate(), Ui.SLIDE_UP);
-        return true;
+        return [ new VO2MaxView() ];
     }
 
 }
